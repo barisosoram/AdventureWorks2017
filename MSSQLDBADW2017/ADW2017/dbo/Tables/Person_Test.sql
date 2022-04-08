@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[Person] (
+﻿CREATE TABLE [dbo].[Person_Test] (
     [BusinessEntityID]      INT                                                           NOT NULL,
     [PersonType]            NCHAR (2)                                                     NOT NULL,
     [NameStyle]             [dbo].[NameStyle]                                             NOT NULL,
@@ -12,6 +12,6 @@
     [Demographics]          XML(CONTENT [Person].[IndividualSurveySchemaCollection])      NULL,
     [rowguid]               UNIQUEIDENTIFIER                                              NOT NULL,
     [ModifiedDate]          DATETIME                                                      NOT NULL,
-    CONSTRAINT [PK_Person] PRIMARY KEY CLUSTERED ([BusinessEntityID] ASC)
+    CONSTRAINT [PK_Person_Test] PRIMARY KEY CLUSTERED ([BusinessEntityID] ASC)
 );
 
